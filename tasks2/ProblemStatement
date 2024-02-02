@@ -1,0 +1,41 @@
+## Category
+- AWS Resources
+- Terraform modules
+- Terraform State management and state locking
+
+## Details
+
+In this assignment, we will create an end-to-end infrastructure using Terraform modules.
+
+## Must Do
+- Create the following resources using terraform resource block :
+    - Create 1 VPC 
+        - eg : `ninja-vpc-01`
+    - Create 4 Subnet
+        - 2 public subnet
+            - eg : `ninja-pub-sub-01/02`
+        - 2 private subnet
+            - eg : `ninja-priv-sub-01/02`
+    - Create instances in it ( bastion and private instance)
+    - Create 1 IGW
+        - eg : `ninja-igw-01`
+    - Create 1 NAT 
+        - eg : `ninja-nat-01`
+    - Create 2 Route Table
+        - 1 for public subnet
+            - eg : `ninja-route-pub-01/02`
+        - 1 for private subnet
+            - eg : `ninja-route-priv-01/02`
+
+- call the root modules using wrapper code for reusability
+- Achieve terrafom state managemnet using S3 and terrafom state locking using dynamodb.
+
+NOTE: Please make maximum use of variables and output file 
+
+## Good to Do
+- Convert your code in two modules named Network and Security
+- Use data source while calling modules.
+
+## References
+- https://www.terraform.io/docs
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs
