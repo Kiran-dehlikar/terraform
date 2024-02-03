@@ -43,5 +43,11 @@ egress_ports = [0]
 public_instance_tag = [ "tf-public-1","tf-public-2"]
 private_instance_tag = ["tf-private-1","tf-private-2" ]
 instance_type = "t2.micro"
+#=================================================================================#
+# S3 Bucket
+bucket_name = "terraform-bucket-kiran"
 
+#=================================================================================#
+# DynamoDB
+dynamodb_table_name = "terraform-dynamo-kiran"
 #=================================================================================#
